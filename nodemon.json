@@ -1,0 +1,13 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "execMap": {
+    "ts": "node -r ts-node/register/transpile-only -r tsconfig-paths/register -r dotenv/config"
+  },
+  "watch": ["src/", ".env", "nodemon.json"],
+  "ignore": ["src/__tests__/**/*", "src/public/**/*"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "ts,json"
+}

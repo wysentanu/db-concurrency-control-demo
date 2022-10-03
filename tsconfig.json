@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "lib": ["esnext"],
+    "outDir": "./build",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}

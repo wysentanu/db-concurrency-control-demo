@@ -1,0 +1,33 @@
+{
+  "name": "db-concurrency-control-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register -r dotenv/config src/index.ts"
+  },
+  "devDependencies": {
+    "@mikro-orm/migrations": "^5.4.2",
+    "@swc-node/register": "^1.5.1",
+    "@swc/core": "^1.2.218",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "4.0.0",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.4.2",
+    "@mikro-orm/core": "^5.4.2",
+    "@mikro-orm/mysql": "^5.4.2",
+    "dotenv": "^16.0.3"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
